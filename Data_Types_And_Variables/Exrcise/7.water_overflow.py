@@ -7,6 +7,6 @@ for i in range(0, n):
     if current_water + tank <= capacity:
         tank += current_water
     else:
-        print("Insufficient capacity")
+        print("Insufficient capacity!")
 
 print(tank)
