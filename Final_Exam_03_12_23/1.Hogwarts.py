@@ -42,6 +42,7 @@ def spellcasting(spell, commands):
         else:
             print("The spell did not work!")
 
+
 spell = input()
 commands = []
 while True:

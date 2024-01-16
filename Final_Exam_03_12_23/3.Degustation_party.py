@@ -10,7 +10,7 @@ def process_commands():
 
         if action == "Like":
             if guest not in guests_likes:
-                guests_likes[guest] =[meal]
+                guests_likes[guest] = [meal]
             elif meal not in guests_likes[guest]:
                 guests_likes[guest].append(meal)
         elif action == "Dislike":
@@ -26,4 +26,6 @@ def process_commands():
     for guest, liked_meals in guests_likes.items():
         print(f"{guest}: {', '.join(liked_meals)}")
     print(f"Unliked meals: {unliked_meals}")
+
+
 process_commands()
